@@ -1,0 +1,266 @@
+:root{
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: spartan;
+}
+body{
+    background: url(image/bg-pattern-bottom-desktop.svg) 200px 150px no-repeat, url(image/bg-pattern-top-desktop.svg) -50px -25px no-repeat;
+    background-size: 80%, 40%;
+    display: flex;
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 3.2cm 0 0 6cm;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.main-text h1{
+    font-size: 1.7cm;
+    color: var(--Very-Dark-Magenta);
+    line-height: 1.7cm;
+    letter-spacing: -0.1cm;
+}
+.main-text p{
+    color: var(--Dark-Grayish-Magenta);
+    font-variation-settings: "wght" 400;
+    margin-top: 0.5cm;
+    font-size: 0.48cm;
+    line-height: 0.8cm;
+}
+.notes{
+    margin-left: 5cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 18cm;
+    height: 7cm;
+}
+.reviews{ 
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    align-items: center;
+    background-color: var(--Light-Grayish-Magenta);
+    width: 14cm;
+    height: 2cm;
+    border-radius: 0.3cm;
+}
+.report{ 
+    display: flex;
+    align-self: center;
+    align-items: center;
+    background-color: var(--Light-Grayish-Magenta);
+    width: 14cm;
+    height: 2cm;
+    border-radius: 0.3cm;
+}
+.best-tech{
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    background-color: var(--Light-Grayish-Magenta);
+    width: 14cm;
+    height: 2cm;
+    border-radius: 0.3cm;
+}
+.text-note{
+    color: var(--Very-Dark-Magenta);
+    font-variation-settings: "wght" 700;
+    margin-left: 1cm;
+}
+.star{
+    display: flex;
+    justify-content: space-between;
+    width: 3cm;
+    margin-left: 1cm;
+}
+.commentaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 37.36cm;
+    height: 10cm;
+    margin-top: 2cm;
+}
+.colton-container{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    height: 7.8cm;
+    width: 11.5cm;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 0.3cm;
+}
+.irene-container{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    height: 7.8cm;
+    width: 11.5cm;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 0.3cm;
+}
+.anne-container{
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    height: 7.8cm;
+    width: 11.5cm;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 0.3cm;
+}
+.profil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1cm;
+    margin-top: 1.3cm;
+}
+.profil img{
+    border-radius: 5cm;
+    max-width: 14%;
+    height: auto;
+}
+.name{
+    margin-left: 0.7cm;
+    line-height: 0.6cm;
+    color: hsl(333, 41%, 56%);
+    font-variation-settings: "wght" 400;
+}
+.name span{
+    color: var(--Light-Grayish-Magenta);
+    font-variation-settings: "wght" 700;
+}
+.avis{
+    color: var(--Light-Grayish-Magenta);
+    font-variation-settings: "wght" 400;
+    margin-left: 1cm;
+    margin-top: 1cm;
+    line-height: 0.7cm;
+}
+.br2{
+    display: none;
+}
+@media screen and (max-width: 625px){
+    body{
+        background: url(image/bg-pattern-bottom-mobile.svg) 0px 250px no-repeat, url(image/bg-pattern-top-mobile.svg) 0px 0px no-repeat;
+        background-size: 100%, 100%;
+        display: flex;
+        justify-content: center;
+    } 
+    .container{
+        flex-direction: column;
+        padding: 2.5cm 0 0 0;
+    }
+    .row{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main-text h1{
+        text-align: center;
+        width: 10cm;
+        font-size: 1.2cm;
+        line-height: 1cm;
+        letter-spacing: -0.1cm;
+    }
+    .main-text p{
+        text-align: center;
+        font-variation-settings: "wght" 400;
+        margin-top: 0.5cm;
+        font-size: 0.44cm;
+        line-height: 0.8cm;
+    }
+    .br1{
+        display: none;
+    }
+    .br2{
+        display: block;
+    }
+    .notes{
+        margin-top: 1cm;
+        margin-left: 0cm;
+        width: 10cm;
+        height: 8.5cm;
+    }
+    .reviews{ 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: center;
+        align-items: center;
+        width: 10cm;
+        height: 2.5cm;
+    }
+    .report{ 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: center;
+        align-items: center;
+        width: 10cm;
+        height: 2.5cm;
+    }
+    .best-tech{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: center;
+        align-items: center;
+        width: 10cm;
+        height: 2.5cm;
+    }
+    .text-note{
+        margin-left: 0cm;
+        margin-top: 0.5cm;
+    }
+    .star{
+        width: 3.2cm;
+        margin-left: 0cm;
+        margin-top: 0.5cm
+    }
+    .commentaire{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 10cm;
+        height: 24.1cm;
+        margin-top: 1cm;
+    }
+    .colton-container{
+        height: 7.5cm;
+        width: 10cm;
+    }
+    .irene-container{
+        margin-top: 0.5cm;
+        height: 7.5cm;
+        width: 10cm;
+    }
+    .anne-container{
+        margin-top: 0.5cm;
+        height: 7.5cm;
+        width: 10cm;
+    }
+    .profil img{
+        border-radius: 5cm;
+        max-width: 14%;
+        height: auto;
+    }
+    .avis{
+        color: var(--Light-Grayish-Magenta);
+        font-variation-settings: "wght" 400;
+        font-size: 0.38cm;
+        margin-left: 1cm;
+        margin-top: 0.7cm;
+        line-height: 0.7cm;
+    }
+}
